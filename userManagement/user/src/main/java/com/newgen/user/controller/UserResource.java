@@ -14,10 +14,10 @@ public class UserResource {
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping(path = "/users")
-	public List<User> findAll(){
-		return userService.findAll();
-	}
-	
+//	@GetMapping(path = "/usAll")
+//	public List<User> findAllUsers(){
+//		return userService.findAll();
+//	}
+//	
 
 }
