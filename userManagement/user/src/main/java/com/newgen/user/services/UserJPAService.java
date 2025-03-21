@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.newgen.user.model.User;
 import com.newgen.user.model.UserRepository;
@@ -23,7 +24,14 @@ public class UserJPAService {
 		return userRepository.findById(id);
 	}
 	
+	public User createUser(User user) {
+		return userRepository.save(user);
+
+	}
 	
-	
+	@Transactional
+	public void deleteUser(Integer id) {
+		userRepository.deleteById(id);
+	}
 	
 }
