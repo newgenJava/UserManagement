@@ -1,4 +1,5 @@
-INSERT into users (name) VALUES ('John Doe');
-INSERT into users (name) VALUES ('Sarah Connor');
-INSERT into users (name) VALUES ('Hermoine');
-INSERT into users (name) VALUES ('Random Guy');
+--INSERT INTO users (id,name) VALUES (11,'John Doe');
+--INSERT INTO users (id,name) VALUES (12,'Jane Doe');
+--INSERT INTO users (id,name) VALUES (13,'Alice Johnson');
+--INSERT INTO users (id,name) VALUES (14,'Bob Smith');
+SELECT * FROM users

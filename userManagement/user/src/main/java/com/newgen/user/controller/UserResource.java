@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.newgen.user.model.User;
+import com.newgen.user.service.UserService;
 
 @RestController
 public class UserResource {
@@ -14,10 +15,10 @@ public class UserResource {
 	@Autowired
 	private UserService userService;
 	
-//	@GetMapping(path = "/usAll")
-//	public List<User> findAllUsers(){
-//		return userService.findAll();
-//	}
-//	
+	@GetMapping(path = "/getUsers")
+	public List<User> findAllUsers(){
+		return userService.findAll();
+	}
+	
 
 }
